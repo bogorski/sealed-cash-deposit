@@ -467,9 +467,15 @@ alert(workers[0].firstName)
 		console.log(url);
 		//const canvas2 = document.querySelector(".blankietCanvas2");
 		const img = document.querySelectorAll(".imgimg");
+		console.log(img);
 		//	img.className = "imgimg"
 		//	img.crossorigin="anonymous"
-		img.src = url;
+
+		img.forEach(function (img) {
+			img.src = url;
+		});
+
+		//		img.src = url;
 		//canvas2.appendChild(img);
 	}
 
