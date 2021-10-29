@@ -463,7 +463,7 @@ alert(workers[0].firstName)
 	btnSave.addEventListener("click", saveCanvas);
 
 	function saveCanvas() {
-		const url = canvas.toDataURL("image/png", 0.5);
+		const url = canvas.toDataURL("image/jpeg", 0.1);
 		console.log(url);
 		//const canvas2 = document.querySelector(".blankietCanvas2");
 		const img = document.querySelectorAll(".imgimg");
