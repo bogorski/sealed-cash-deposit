@@ -17,8 +17,8 @@
 
 img {
 	transform: rotate(90deg) translateY(82px) translateX(81px);
-	width: 10.5cm;
-	height: 14.8cm;
+	width: 14.8cm;
+	height: 10.5cm;
 }
 
 canvas {
