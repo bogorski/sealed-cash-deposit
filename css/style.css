@@ -1,54 +1,53 @@
 @media print {
-	button, .sealedCash, .depositTicket { display: none; }
-	
-    body{
-        width: 21cm;
-        height: 29.7cm;
+	button,
+	.sealedCash,
+	.depositTicket {
+		/*	display: none;*/
 	}
-	   
+
+	body {
+		width: 21cm;
+		height: 29.7cm;
+	}
+
 	.depositTicket {
 		margin: 0.5cm;
-	}	
+	}
 }
-.imgimg{
-	 transform: rotate(90deg) translateY(82px)  translateX(81px);
-	 	width: 10.5cm;
+
+img {
+	/*	transform: rotate(90deg) translateY(82px) translateX(81px);*/
+	width: 10.5cm;
 	height: 14.8cm;
 }
- canvas {
-	 transform: rotate(90deg) translateY(82px)  translateX(81px);
-        width: 14.8cm;
-        height: 10.5cm;
-		object-fit:contain ;
-	}
+
+canvas {
+	transform: rotate(90deg) translateY(82px) translateX(81px);
+	width: 14.8cm;
+	height: 10.5cm;
+	object-fit: contain;
+}
+
 .nextPage {
-	page-break-after: always; 
+	page-break-after: always;
 }
 
 .depositTicket {
 	/*transform: rotate(90deg);*/
-	display: none;
+	/*	display: none;*/
 }
 
 .sealedCash {
 	/*display: none;*/
 }
 
-.square {
-	border: 1px solid black;
-	width: 0.53cm;
-	height: 20px;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1em;
-}
-
 .blankiet {
 	border: 1px solid red;
 	width: 10.5cm;
 	height: 14.8cm;
-	display: none;
+	/*	display: none;*/
 }
+
 .blankietCanvas {
 	border: 1px solid red;
 	width: 10.5cm;
@@ -59,11 +58,8 @@
 	display: flex;
 }
 
-.column {
-}
-
 .containerA4 {
 	border: 1px solid blue;
 	width: 21cm;
-    height: 29.7cm;
+	height: 29.7cm;
 }
