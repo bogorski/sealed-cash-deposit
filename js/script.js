@@ -305,7 +305,9 @@ alert(workers[0].firstName)
 
 	const btnPrint = document.querySelector(".btnPrint");
 	btnPrint.addEventListener("click", bbb);
-	const canvas = document.querySelector("canvas");
+	const canvas = document.createElement("canvas");
+	console.log(canvas);
+	//document.querySelector("canvas");
 	const ctx = canvas.getContext("2d");
 
 	function ggg() {
@@ -464,58 +466,15 @@ alert(workers[0].firstName)
 
 	function saveCanvas() {
 		const url = canvas.toDataURL("image/jpeg", 0.5);
-		console.log(url);
+		//console.log(url);
 		//const canvas2 = document.querySelector(".blankietCanvas2");
 		const img = document.querySelectorAll(".imgimg");
-		console.log(img);
+		//	console.log(img);
 		//	img.className = "imgimg"
 		//	img.crossorigin="anonymous"
 
 		img.forEach(function (img) {
 			img.src = url;
 		});
-
-		//		img.src = url;
-		//canvas2.appendChild(img);
 	}
-
-	/*	const canvas2 = document.querySelector(".myCanvas2");
-	const ctx2 = canvas2.getContext("2d");
-	image.addEventListener("load", e => {
-	  ctx2.drawImage(image, 0, 0);
-		ctx2.beginPath();
-	})*/
-
-	/*for(let i=0; i<aaa.length; i++){
-		//ctx.moveTo(20, i*20); 
-		ctx2.font = "bold 50px Courier";
-		if(i==0){
-			ctx2.fillText(aaa[i], 110, 90)
-		} else {
-			ctx2.fillText(aaa[i], 110+59*i, 90)
-		}
-	}*/
-	/*
-const canvas3 = document.querySelector(".myCanvas3");
-const ctx3 = canvas3.getContext("2d");
-  ctx3.drawImage(image, 0, 0);
-	ctx3.beginPath();
-
-for(let i=0; i<aaa.length; i++){
-	//ctx.moveTo(20, i*20); 
-	ctx2.font = "bold 50px Courier";
-	if(i==0){
-		ctx2.fillText(aaa[i], 110, 90)
-	} else {
-		ctx2.fillText(aaa[i], 110+59*i, 90)
-	}
-}
-*/
-
-	//window.print();
-	//})
-
-	/*
-var dataURL = canvas.toDataURL('image/jpeg', 1.0);
-console.log(dataURL);*/
 });
