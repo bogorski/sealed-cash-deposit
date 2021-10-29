@@ -466,7 +466,7 @@ alert(workers[0].firstName)
 		const url = canvas.toDataURL();
 		console.log(url);
 		//const canvas2 = document.querySelector(".blankietCanvas2");
-		const img = document.querySelector(".imgimg");
+		const img = document.querySelectorAll(".imgimg");
 		//	img.className = "imgimg"
 		//	img.crossorigin="anonymous"
 		img.src = url;
