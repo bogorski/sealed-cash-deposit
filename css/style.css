@@ -1,8 +1,7 @@
 @media print {
 	button,
-	.sealedCash,
-	.depositTicket {
-		/*	display: none;*/
+	.sealedCash {
+		display: none;
 	}
 
 	body {
@@ -42,14 +41,14 @@ canvas {
 }
 
 .blankiet {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	width: 10.5cm;
 	height: 14.8cm;
 	/*	display: none;*/
 }
 
 .blankietCanvas {
-	border: 1px solid red;
+	/*	border: 1px solid red;*/
 	width: 10.5cm;
 	height: 14.8cm;
 }
@@ -59,7 +58,7 @@ canvas {
 }
 
 .containerA4 {
-	border: 1px solid blue;
+	/*	border: 1px solid blue;*/
 	width: 21cm;
 	height: 29.7cm;
 }
