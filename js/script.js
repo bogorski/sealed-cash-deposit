@@ -309,7 +309,8 @@ alert(workers[0].firstName)
 	console.log(canvas);
 	//document.querySelector("canvas");
 	const ctx = canvas.getContext("2d");
-
+	canvas.height = 1253;
+	canvas.width = 1772;
 	function ggg() {
 		window.print();
 	}
@@ -317,11 +318,11 @@ alert(workers[0].firstName)
 	function bbb() {
 		console.log("funkcja bbb");
 		const image = new Image();
-
+		console.log(ctx.weight);
 		//console.log("bbb")
 		image.addEventListener("load", (e) => {
 			ctx.drawImage(image, 0, 0);
-			ctx.beginPath();
+			// ??	ctx.beginPath();
 
 			let aaa = "Automat-Spec Sp. z o.o. Sp. k.";
 			aaa = aaa.toUpperCase();
@@ -460,10 +461,17 @@ alert(workers[0].firstName)
 			}*/
 		});
 		image.src = "druk.png";
+		console.log(canvas);
 	}
 	const btnSave = document.querySelector(".btnSave");
 	btnSave.addEventListener("click", saveCanvas);
 
+	const btnCanvas = document.querySelector(".btnCanvas");
+	btnCanvas.addEventListener("click", printCanvas);
+	const divCanvas = document.querySelector(".testCanvas");
+	function printCanvas() {
+		divCanvas.appendChild(canvas);
+	}
 	function saveCanvas() {
 		const url = canvas.toDataURL("image/jpeg", 0.5);
 		//console.log(url);

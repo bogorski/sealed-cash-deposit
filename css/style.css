@@ -22,10 +22,10 @@ img {
 }
 
 canvas {
-	transform: rotate(90deg) translateY(82px) translateX(81px);
+	/*	transform: rotate(90deg) translateY(82px) translateX(81px);
 	width: 14.8cm;
 	height: 10.5cm;
-	object-fit: contain;
+	object-fit: contain;*/
 }
 
 .nextPage {
