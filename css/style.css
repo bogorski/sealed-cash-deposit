@@ -4,13 +4,21 @@
 		display: none;
 	}
 
-	body {
+	.depositTicket {
+		margin: 0.5cm;
+	}
+	.containerA4 {
 		width: 21cm;
 		height: 29.7cm;
 	}
+	.toPrint {
+	}
+}
 
+@media screen {
+	.containerA4,
 	.depositTicket {
-		margin: 0.5cm;
+		display: none;
 	}
 }
 
@@ -21,10 +29,10 @@ img {
 }
 
 canvas {
-	/*	transform: rotate(90deg) translateY(82px) translateX(81px);
+	transform: rotate(90deg) translateY(82px) translateX(81px);
 	width: 14.8cm;
 	height: 10.5cm;
-	object-fit: contain;*/
+	object-fit: contain;
 }
 
 .nextPage {
@@ -33,7 +41,6 @@ canvas {
 
 .depositTicket {
 	/*transform: rotate(90deg);*/
-	/*	display: none;*/
 }
 
 .sealedCash {
@@ -42,8 +49,8 @@ canvas {
 
 .blankiet {
 	/*border: 1px solid red;*/
-	width: 10.5cm;
-	height: 14.8cm;
+	/*	width: 10.5cm;
+	height: 14.8cm;*/
 	/*	display: none;*/
 }
 
@@ -51,14 +58,23 @@ canvas {
 	/*	border: 1px solid red;*/
 	width: 10.5cm;
 	height: 14.8cm;
+	/*	width: 50%;
+	height: 50%;*/
 }
 
 .myContainer {
 	display: flex;
+	width: 10.5cm;
+	height: 14.8cm;
+}
+
+.revers {
+	transform: rotate(90deg) translateY(82px) translateX(81px);
 }
 
 .containerA4 {
 	/*	border: 1px solid blue;*/
-	width: 21cm;
-	height: 29.7cm;
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100%;
 }

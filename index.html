@@ -106,176 +106,178 @@
 			</div>
 		</div>
 	</div>
-	<div class="container toPrint depositTicket">
-		<div class="row">
-			<div class="col text-center ">
-				<h1>Specyfikacja Wpłaty zamkniętej</h1>
+	<div class="containerA4">
+		<div class="container depositTicket">
+			<div class="row">
+				<div class="col text-center ">
+					<h1>Specyfikacja Wpłaty zamkniętej</h1>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<p>DANE JEDNOSTKI ORGANIZACYJNEJ KLIENTA DOKONUJĄCEJ WPŁATY:</p>
+			<div class="row">
+				<div class="col">
+					<p>DANE JEDNOSTKI ORGANIZACYJNEJ KLIENTA DOKONUJĄCEJ WPŁATY:</p>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-3">
-				<p>Nazwa klienta:</p>
+			<div class="row">
+				<div class="col-3">
+					<p>Nazwa klienta:</p>
+				</div>
+				<div class="col-9">
+					<p>Robert Stawieraj</p>
+				</div>
 			</div>
-			<div class="col-9">
-				<p>Robert Stawieraj</p>
+			<div class="row">
+				<div class="col-3">
+					<p>Ulica</p>
+				</div>
+				<div class="col-9">
+					<p>al. Katowicka 66</p>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-3">
-				<p>Ulica</p>
+			<div class="row">
+				<div class="col-3">
+					<p>Kod pocztowy</p>
+				</div>
+				<div class="col-3">
+					<p>05-830</p>
+				</div>
+				<div class="col-3">
+					<p>Miejscowość</p>
+				</div>
+				<div class="col-3">
+					<p>Nadarzyn</p>
+				</div>
 			</div>
-			<div class="col-9">
-				<p>al. Katowicka 66</p>
+			<div class="row">
+				<div class="col">
+					<p>WPŁATA DOKONYWANA W ODDZIALE:</p>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-3">
-				<p>Kod pocztowy</p>
+			<div class="row">
+				<div class="col-3">
+					<p>Miasto</p>
+				</div>
+				<div class="col-9">
+					<p>Warszawa</p>
+				</div>
+				<div class="col-3">
+					<p>Kwota wpłaty</p>
+				</div>
+				<div class="col-9">
+					<p id="depositAmount"></p>
+				</div>
+				<div class="col-3">
+					<p>Słownie</p>
+				</div>
+				<div class="col-9">
+					<p id="amountWords"></p>
+				</div>
 			</div>
-			<div class="col-3">
-				<p>05-830</p>
+			<div class="row">
+				<div class="col">
+					<p>SPECYFIKACJA WPŁATY:</p>
+				</div>
 			</div>
-			<div class="col-3">
-				<p>Miejscowość</p>
+			<div class="row">
+				<div class="col-6">
+					<p>Dotyczy bezpiecznej koperty o nr:</p>
+				</div>
+				<div class="col-6">
+					<p id="secureNumber"></p>
+				</div>
 			</div>
-			<div class="col-3">
-				<p>Nadarzyn</p>
+			<div class="row">
+				<table class="table table-bordered text-center">
+					<thead>
+						<tr>
+							<th>Nominał</th>
+							<th>Ilość sztuk</th>
+							<th>Kwota</th>
+							<th>Waluta</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>500,00</td>
+							<td>0</td>
+							<td>0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>200,00</td>
+							<td>0</td>
+							<td>0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>100,00</td>
+							<td>0</td>
+							<td>0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>50,00</td>
+							<td>0</td>
+							<td>0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>20,00</td>
+							<td>0</td>
+							<td>0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>10,00</td>
+							<td>0</td>
+							<td>0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>5,00</td>
+							<td id="amountFive">0</td>
+							<td id="totalFive">0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>2,00</td>
+							<td id="amountTwo">0</td>
+							<td id="totalTwo">0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>1,00</td>
+							<td id="amountOne">0 </td>
+							<td id="totalOne">0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>0,50</td>
+							<td id="amountFifty">0</td>
+							<td id="totalFifty">0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>0,20</td>
+							<td id="amountTwenty">0</td>
+							<td id="totalTwenty">0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>0,10</td>
+							<td id="amountTen">0</td>
+							<td id="totalTen">0.00</td>
+							<td>PLN</td>
+						</tr>
+						<tr>
+							<td>Razem</td>
+							<td id="totalMoney">0</td>
+							<td id="totalValue">0.00</td>
+							<td>PLN</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<p>WPŁATA DOKONYWANA W ODDZIALE:</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-3">
-				<p>Miasto</p>
-			</div>
-			<div class="col-9">
-				<p>Warszawa</p>
-			</div>
-			<div class="col-3">
-				<p>Kwota wpłaty</p>
-			</div>
-			<div class="col-9">
-				<p id="depositAmount"></p>
-			</div>
-			<div class="col-3">
-				<p>Słownie</p>
-			</div>
-			<div class="col-9">
-				<p id="amountWords"></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<p>SPECYFIKACJA WPŁATY:</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-6">
-				<p>Dotyczy bezpiecznej koperty o nr:</p>
-			</div>
-			<div class="col-6">
-				<p id="secureNumber"></p>
-			</div>
-		</div>
-		<div class="row">
-			<table class="table table-bordered text-center">
-				<thead>
-					<tr>
-						<th>Nominał</th>
-						<th>Ilość sztuk</th>
-						<th>Kwota</th>
-						<th>Waluta</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>500,00</td>
-						<td>0</td>
-						<td>0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>200,00</td>
-						<td>0</td>
-						<td>0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>100,00</td>
-						<td>0</td>
-						<td>0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>50,00</td>
-						<td>0</td>
-						<td>0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>20,00</td>
-						<td>0</td>
-						<td>0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>10,00</td>
-						<td>0</td>
-						<td>0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>5,00</td>
-						<td id="amountFive">0</td>
-						<td id="totalFive">0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>2,00</td>
-						<td id="amountTwo">0</td>
-						<td id="totalTwo">0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>1,00</td>
-						<td id="amountOne">0 </td>
-						<td id="totalOne">0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>0,50</td>
-						<td id="amountFifty">0</td>
-						<td id="totalFifty">0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>0,20</td>
-						<td id="amountTwenty">0</td>
-						<td id="totalTwenty">0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>0,10</td>
-						<td id="amountTen">0</td>
-						<td id="totalTen">0.00</td>
-						<td>PLN</td>
-					</tr>
-					<tr>
-						<td>Razem</td>
-						<td id="totalMoney">0</td>
-						<td id="totalValue">0.00</td>
-						<td>PLN</td>
-					</tr>
-				</tbody>
-			</table>
 		</div>
 	</div>
 	<div class="nextPage"></div>
@@ -287,7 +289,7 @@
 		</canvas>-->
 	</div>
 	<div class="containerA4">
-		<div class="myContainer toPrint">
+		<div class="myContainer">
 			<div class="blankietCanvas">
 				<img class="imgimg"></img>
 			</div>
