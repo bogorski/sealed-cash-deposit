@@ -304,7 +304,7 @@ alert(workers[0].firstName)
 */
 
 	const btnPrint = document.querySelector(".btnPrint");
-	btnPrint.addEventListener("click", bbb);
+	btnPrint.addEventListener("click", dfg);
 	const canvas = document.createElement("canvas");
 	console.log(canvas);
 	//document.querySelector("canvas");
@@ -462,9 +462,16 @@ alert(workers[0].firstName)
 		});
 		image.src = "druk.png";
 		console.log(canvas);
-		printCanvas();
-		saveCanvas();
+	}
+
+	async function dfg() {
+		console.log("1");
+		await bbb();
+		console.log("2");
+		await saveCanvas();
+		console.log("4");
 		window.print();
+		console.log("5");
 	}
 	/*	const btnSave = document.querySelector(".btnSave");
 	btnSave.addEventListener("click", saveCanvas);*/
