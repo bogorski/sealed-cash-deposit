@@ -477,13 +477,14 @@ alert(workers[0].firstName)
 	btnSave.addEventListener("click", saveCanvas);*/
 
 	const btnCanvas = document.querySelector(".btnCanvas");
-	btnCanvas.addEventListener("click", printCanvas);
+	btnCanvas.addEventListener("click", saveCanvas);
 	const divCanvas = document.querySelector(".testCanvas");
 	function printCanvas() {
 		divCanvas.appendChild(canvas);
 	}
 	function saveCanvas() {
 		const url = canvas.toDataURL("image/jpeg", 0.5);
+		console.log(url);
 		//console.log(url);
 		//const canvas2 = document.querySelector(".blankietCanvas2");
 		const img = document.querySelectorAll(".imgimg");
