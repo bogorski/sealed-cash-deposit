@@ -462,18 +462,19 @@ alert(workers[0].firstName)
 		});
 		image.src = "druk.png";
 		console.log(canvas);
+		printCanvas();
 		saveCanvas();
 		window.print();
 	}
 	/*	const btnSave = document.querySelector(".btnSave");
 	btnSave.addEventListener("click", saveCanvas);*/
 
-	/*const btnCanvas = document.querySelector(".btnCanvas");
+	const btnCanvas = document.querySelector(".btnCanvas");
 	btnCanvas.addEventListener("click", printCanvas);
 	const divCanvas = document.querySelector(".testCanvas");
 	function printCanvas() {
 		divCanvas.appendChild(canvas);
-	}*/
+	}
 	function saveCanvas() {
 		const url = canvas.toDataURL("image/jpeg", 0.5);
 		//console.log(url);
