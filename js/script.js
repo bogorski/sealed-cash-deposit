@@ -470,12 +470,15 @@ alert(workers[0].firstName)
 		console.log("2");
 		await saveCanvas();
 		console.log("4");
-		window.print();
+		await printtt();
 		console.log("5");
 	}
 	/*	const btnSave = document.querySelector(".btnSave");
 	btnSave.addEventListener("click", saveCanvas);*/
-
+	function printtt() {
+		console.log("print");
+		window.print();
+	}
 	const btnCanvas = document.querySelector(".btnCanvas");
 	btnCanvas.addEventListener("click", saveCanvas);
 	const divCanvas = document.querySelector(".testCanvas");
@@ -495,5 +498,6 @@ alert(workers[0].firstName)
 		img.forEach(function (img) {
 			img.src = url;
 		});
+		console.log("save");
 	}
 });
