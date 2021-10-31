@@ -318,7 +318,6 @@ alert(workers[0].firstName)
 	function bbb() {
 		console.log("funkcja bbb");
 		const image = new Image();
-		console.log(ctx.weight);
 		//console.log("bbb")
 		image.addEventListener("load", (e) => {
 			ctx.drawImage(image, 0, 0);
@@ -461,17 +460,18 @@ alert(workers[0].firstName)
 			}*/
 		});
 		image.src = "druk.png";
-		console.log(canvas);
 	}
 
 	async function dfg() {
 		console.log("1");
 		await bbb();
 		console.log("2");
-		await saveCanvas();
+		//	await saveCanvas();
+		setTimeout(saveCanvas, 1000);
 		console.log("4");
-		await printtt();
-		console.log("5");
+
+		/*	await printtt();
+		console.log("5");*/
 	}
 	/*	const btnSave = document.querySelector(".btnSave");
 	btnSave.addEventListener("click", saveCanvas);*/
@@ -485,10 +485,17 @@ alert(workers[0].firstName)
 	function printCanvas() {
 		divCanvas.appendChild(canvas);
 	}
-	function saveCanvas() {
+
+	function urlC() {
 		const url = canvas.toDataURL("image/jpeg", 0.5);
+		return url;
+	}
+
+	async function saveCanvas() {
+		//const url = canvas.toDataURL("image/jpeg", 0.5);
+		const url = await urlC();
+		console.log(urlC());
 		console.log(url);
-		//console.log(url);
 		//const canvas2 = document.querySelector(".blankietCanvas2");
 		const img = document.querySelectorAll(".imgimg");
 		//	console.log(img);
@@ -499,5 +506,6 @@ alert(workers[0].firstName)
 			img.src = url;
 		});
 		console.log("save");
+		printtt();
 	}
 });
